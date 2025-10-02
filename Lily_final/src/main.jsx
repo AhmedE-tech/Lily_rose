@@ -1,11 +1,11 @@
 // src/main.jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './App'  // Remove .jsx extension
 import './index.css'
 
-// Simple error boundary
-const Root = () => (
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
@@ -24,3 +24,4 @@ if (rootElement) {
 } else {
   console.error('Root element not found');
 }
+
