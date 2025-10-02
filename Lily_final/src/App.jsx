@@ -1,8 +1,9 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react'
 import { MessageSquare, Mic, ArrowLeft, Settings } from 'lucide-react'
-import ChatInterface from './components/ChatInterface'
-import VoiceInterface from './components/VoiceInterface'
+
+import ChatInterface from './components/ChatInterface'  // No .jsx
+import VoiceInterface from './components/VoiceInterface'  // No .jsx
 
 function App() {
   const [currentView, setCurrentView] = useState('chat') // 'chat' or 'voice'
@@ -90,3 +91,4 @@ function App() {
 }
 
 export default App
+
